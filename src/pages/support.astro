@@ -1,0 +1,35 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import SiteHeader from '../components/SiteHeader.astro';
+import SiteFooter from '../components/SiteFooter.astro';
+import PlaceholderImage from '../components/PlaceholderImage.astro';
+---
+<BaseLayout title="Marble Arms | Support" description="Support and contact Marble Arms">
+  <main>
+    <SiteHeader />
+    <section class="hero">
+      <p class="tag">Support & Contact</p>
+      <h2>We're here to help.</h2>
+      <p>
+        Add customer support hours, warranty details, and contact forms here.
+      </p>
+      <PlaceholderImage caption="Replace with customer support or service imagery." />
+    </section>
+    <section class="grid">
+      <article class="card">
+        <h3>Contact</h3>
+        <p>Email: support@marblearms.com (placeholder)</p>
+        <p>Phone: (800) 555-0199 (placeholder)</p>
+      </article>
+      <article class="card">
+        <h3>Warranty</h3>
+        <p>Summarize warranty coverage, registration, and service processes.</p>
+      </article>
+      <article class="card">
+        <h3>FAQ</h3>
+        <p>Add the most common troubleshooting and product care questions.</p>
+      </article>
+    </section>
+  </main>
+  <SiteFooter />
+</BaseLayout>

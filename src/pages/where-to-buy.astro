@@ -1,0 +1,34 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import SiteHeader from '../components/SiteHeader.astro';
+import SiteFooter from '../components/SiteFooter.astro';
+import PlaceholderImage from '../components/PlaceholderImage.astro';
+---
+<BaseLayout title="Marble Arms | Where to Buy" description="Find Marble Arms dealers">
+  <main>
+    <SiteHeader />
+    <section class="hero">
+      <p class="tag">Where to buy</p>
+      <h2>Find a dealer or distributor.</h2>
+      <p>
+        Add an interactive dealer locator, map integration, and distributor list here.
+      </p>
+      <PlaceholderImage caption="Replace with retail partner photography." />
+    </section>
+    <section class="grid">
+      <article class="card">
+        <h3>Dealer Locator</h3>
+        <p>Embed a search widget or map experience for visitors.</p>
+      </article>
+      <article class="card">
+        <h3>Authorized Distributors</h3>
+        <p>List distributor logos, coverage regions, and contact info.</p>
+      </article>
+      <article class="card">
+        <h3>Online Retailers</h3>
+        <p>Provide approved ecommerce partners and compliance notes.</p>
+      </article>
+    </section>
+  </main>
+  <SiteFooter />
+</BaseLayout>

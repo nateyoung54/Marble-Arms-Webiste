@@ -1,0 +1,76 @@
+---
+const { title = 'Marble Arms', description = 'Marble Arms official website' } = Astro.props;
+---
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content={description} />
+    <title>{title}</title>
+    <link rel="icon" href="/logo-placeholder.svg" />
+    <style>
+      :root {
+        color-scheme: light;
+        font-family: "Inter", "Segoe UI", sans-serif;
+        line-height: 1.6;
+        --primary: #243b55;
+        --accent: #d18b1f;
+        --background: #f7f4ef;
+        --text: #1f1f1f;
+      }
+      body {
+        margin: 0;
+        background: var(--background);
+        color: var(--text);
+      }
+      main {
+        max-width: 1100px;
+        margin: 0 auto;
+        padding: 2.5rem 1.5rem 4rem;
+      }
+      a {
+        color: var(--primary);
+        text-decoration: none;
+      }
+      a:hover {
+        color: var(--accent);
+      }
+      .hero {
+        background: white;
+        border-radius: 24px;
+        padding: 2.5rem;
+        box-shadow: 0 20px 50px rgba(0, 0, 0, 0.08);
+        margin-bottom: 2.5rem;
+      }
+      .grid {
+        display: grid;
+        gap: 1.5rem;
+        grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+      }
+      .card {
+        background: white;
+        border-radius: 16px;
+        padding: 1.5rem;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.06);
+      }
+      .placeholder-image {
+        width: 100%;
+        border-radius: 12px;
+        border: 1px dashed rgba(0, 0, 0, 0.2);
+      }
+      .tag {
+        display: inline-block;
+        padding: 0.25rem 0.75rem;
+        border-radius: 999px;
+        background: rgba(209, 139, 31, 0.15);
+        color: #7a4f10;
+        font-weight: 600;
+        font-size: 0.85rem;
+      }
+    </style>
+  </head>
+  <body>
+    <slot />
+  </body>
+</html>

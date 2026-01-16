@@ -1,0 +1,34 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import SiteHeader from '../components/SiteHeader.astro';
+import SiteFooter from '../components/SiteFooter.astro';
+import PlaceholderImage from '../components/PlaceholderImage.astro';
+---
+<BaseLayout title="Marble Arms | Parts & Specs" description="Parts, specs, and manuals">
+  <main>
+    <SiteHeader />
+    <section class="hero">
+      <p class="tag">Parts & specifications</p>
+      <h2>Parts library and technical resources.</h2>
+      <p>
+        Replace these blocks with searchable parts lists, exploded diagrams, and PDF manuals.
+      </p>
+      <PlaceholderImage caption="Replace with parts diagram photography or illustrations." />
+    </section>
+    <section class="grid">
+      <article class="card">
+        <h3>Manuals</h3>
+        <p>Upload PDF manuals and safety documentation here.</p>
+      </article>
+      <article class="card">
+        <h3>Exploded Diagrams</h3>
+        <p>Link to detail drawings and parts lists.</p>
+      </article>
+      <article class="card">
+        <h3>Service Kits</h3>
+        <p>Highlight available replacement parts and service kits.</p>
+      </article>
+    </section>
+  </main>
+  <SiteFooter />
+</BaseLayout>

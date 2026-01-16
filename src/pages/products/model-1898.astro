@@ -1,0 +1,39 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import SiteHeader from '../../components/SiteHeader.astro';
+import SiteFooter from '../../components/SiteFooter.astro';
+import PlaceholderImage from '../../components/PlaceholderImage.astro';
+---
+<BaseLayout title="Marble Arms | Model 1898" description="Model 1898 product detail">
+  <main>
+    <SiteHeader />
+    <section class="hero">
+      <p class="tag">Product detail</p>
+      <h2>Model 1898</h2>
+      <p>
+        Replace this placeholder with detailed product storytelling, technical highlights,
+        and available configurations.
+      </p>
+      <PlaceholderImage caption="Replace with Model 1898 hero photography." />
+    </section>
+    <section class="grid">
+      <article class="card">
+        <h3>Specifications</h3>
+        <ul>
+          <li>Caliber options: Placeholder</li>
+          <li>Barrel length: Placeholder</li>
+          <li>Finish: Placeholder</li>
+        </ul>
+      </article>
+      <article class="card">
+        <h3>Gallery</h3>
+        <p>Insert additional photography and lifestyle imagery.</p>
+      </article>
+      <article class="card">
+        <h3>Dealer Resources</h3>
+        <p>Download manuals, spec sheets, and marketing assets.</p>
+      </article>
+    </section>
+  </main>
+  <SiteFooter />
+</BaseLayout>

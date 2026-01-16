@@ -1,0 +1,38 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import SiteHeader from '../components/SiteHeader.astro';
+import SiteFooter from '../components/SiteFooter.astro';
+import PlaceholderImage from '../components/PlaceholderImage.astro';
+---
+<BaseLayout title="Marble Arms | Products" description="Marble Arms product catalog">
+  <main>
+    <SiteHeader />
+    <section class="hero">
+      <p class="tag">Products overview</p>
+      <h2>Built for field and range.</h2>
+      <p>
+        Use this template to introduce product families, calibers, and key differentiators.
+        Swap in real product photography and specs.
+      </p>
+      <PlaceholderImage caption="Replace with product line hero photography." />
+    </section>
+    <section class="grid">
+      <article class="card">
+        <h3>Model 1898</h3>
+        <p>Classic lever action platform with modern machining and finishes.</p>
+        <a href="/products/model-1898">View product detail →</a>
+      </article>
+      <article class="card">
+        <h3>Trail Scout Series</h3>
+        <p>Compact hunting rifles designed for backcountry reliability.</p>
+        <a href="/products/trail-scout">View product detail →</a>
+      </article>
+      <article class="card">
+        <h3>Custom Shop</h3>
+        <p>Premium finishes, engraving, and limited edition releases.</p>
+        <a href="/support">Request custom options →</a>
+      </article>
+    </section>
+  </main>
+  <SiteFooter />
+</BaseLayout>

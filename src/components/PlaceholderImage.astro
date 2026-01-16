@@ -1,0 +1,18 @@
+---
+const { src = '/photos/photography-placeholder.svg', alt = 'Photography placeholder', caption } = Astro.props;
+---
+<figure>
+  <img class="placeholder-image" src={src} alt={alt} />
+  {caption ? <figcaption>{caption}</figcaption> : null}
+  <style>
+    figure {
+      margin: 0;
+      display: grid;
+      gap: 0.5rem;
+    }
+    figcaption {
+      font-size: 0.85rem;
+      color: #5a5a5a;
+    }
+  </style>
+</figure>
