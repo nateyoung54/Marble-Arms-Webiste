@@ -1,0 +1,38 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import SiteHeader from '../components/SiteHeader.astro';
+import SiteFooter from '../components/SiteFooter.astro';
+import PlaceholderImage from '../components/PlaceholderImage.astro';
+---
+<BaseLayout title="Marble Arms | Homepage" description="Marble Arms official homepage">
+  <main>
+    <SiteHeader />
+    <section class="hero">
+      <p class="tag">Homepage template</p>
+      <h2>Heritage craftsmanship meets modern precision.</h2>
+      <p>
+        This is the foundational homepage template for Marble Arms. Replace this
+        copy with brand storytelling, hero photography, and launch messaging.
+      </p>
+      <PlaceholderImage caption="Replace with primary homepage hero photography." />
+    </section>
+    <section class="grid">
+      <article class="card">
+        <h3>Featured Products</h3>
+        <p>Highlight flagship rifles, shotguns, or accessories with real product photography.</p>
+        <a href="/products">Explore products →</a>
+      </article>
+      <article class="card">
+        <h3>Where to Buy</h3>
+        <p>Point visitors to dealers, distributors, and online retail partners.</p>
+        <a href="/where-to-buy">Find a dealer →</a>
+      </article>
+      <article class="card">
+        <h3>Marbles U</h3>
+        <p>Educational content, maintenance tips, and training resources live here.</p>
+        <a href="/marbles-u">Start learning →</a>
+      </article>
+    </section>
+  </main>
+  <SiteFooter />
+</BaseLayout>

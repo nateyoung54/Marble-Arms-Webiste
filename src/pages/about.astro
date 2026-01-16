@@ -1,0 +1,35 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import SiteHeader from '../components/SiteHeader.astro';
+import SiteFooter from '../components/SiteFooter.astro';
+import PlaceholderImage from '../components/PlaceholderImage.astro';
+---
+<BaseLayout title="Marble Arms | About" description="About Marble Arms">
+  <main>
+    <SiteHeader />
+    <section class="hero">
+      <p class="tag">About Marble Arms</p>
+      <h2>A legacy of performance since 1898.</h2>
+      <p>
+        This section should tell the Marble Arms story, highlight craftsmanship, and
+        introduce the team or heritage timeline.
+      </p>
+      <PlaceholderImage caption="Replace with archival or brand storytelling photography." />
+    </section>
+    <section class="grid">
+      <article class="card">
+        <h3>Our Heritage</h3>
+        <p>Add timeline milestones, founding story, and key innovations.</p>
+      </article>
+      <article class="card">
+        <h3>Modern Craftsmanship</h3>
+        <p>Describe the manufacturing process, materials, and quality assurance.</p>
+      </article>
+      <article class="card">
+        <h3>Community</h3>
+        <p>Highlight partnerships, conservation efforts, and customer stories.</p>
+      </article>
+    </section>
+  </main>
+  <SiteFooter />
+</BaseLayout>

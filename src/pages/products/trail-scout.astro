@@ -1,0 +1,35 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import SiteHeader from '../../components/SiteHeader.astro';
+import SiteFooter from '../../components/SiteFooter.astro';
+import PlaceholderImage from '../../components/PlaceholderImage.astro';
+---
+<BaseLayout title="Marble Arms | Trail Scout" description="Trail Scout product detail">
+  <main>
+    <SiteHeader />
+    <section class="hero">
+      <p class="tag">Product detail</p>
+      <h2>Trail Scout Series</h2>
+      <p>
+        Use this template to capture the value proposition, specs, and in-field performance
+        of the Trail Scout lineup.
+      </p>
+      <PlaceholderImage caption="Replace with Trail Scout hero photography." />
+    </section>
+    <section class="grid">
+      <article class="card">
+        <h3>Core Features</h3>
+        <p>Short action, lightweight build, and premium optics-ready rails.</p>
+      </article>
+      <article class="card">
+        <h3>Available Variants</h3>
+        <p>Placeholder for caliber, stock, and finish options.</p>
+      </article>
+      <article class="card">
+        <h3>Downloadable Assets</h3>
+        <p>Provide manuals, safety sheets, and compliance documentation here.</p>
+      </article>
+    </section>
+  </main>
+  <SiteFooter />
+</BaseLayout>

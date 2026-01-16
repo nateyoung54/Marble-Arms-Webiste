@@ -1,0 +1,61 @@
+---
+const navItems = [
+  { label: 'Products', href: '/products' },
+  { label: 'Parts & Specs', href: '/parts-specs' },
+  { label: 'Where to Buy', href: '/where-to-buy' },
+  { label: 'Marbles U', href: '/marbles-u' },
+  { label: 'Support', href: '/support' }
+];
+---
+<header>
+  <div class="brand">
+    <img src="/logo-placeholder.svg" alt="Marble Arms logo" width="48" height="48" />
+    <div>
+      <p class="tag">Official placeholder logo</p>
+      <h1>Marble Arms</h1>
+      <p class="sub">Precision firearms, engineered for generations.</p>
+    </div>
+  </div>
+  <nav>
+    {navItems.map((item) => (
+      <a href={item.href}>{item.label}</a>
+    ))}
+  </nav>
+  <style>
+    header {
+      display: flex;
+      flex-direction: column;
+      gap: 1.5rem;
+      margin-bottom: 2.5rem;
+    }
+    .brand {
+      display: flex;
+      gap: 1rem;
+      align-items: center;
+    }
+    .brand img {
+      border-radius: 12px;
+      background: white;
+      padding: 0.5rem;
+      border: 1px solid rgba(0, 0, 0, 0.1);
+    }
+    h1 {
+      margin: 0.2rem 0 0;
+    }
+    .sub {
+      margin: 0.2rem 0 0;
+      color: #4d4d4d;
+    }
+    nav {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
+    nav a {
+      padding: 0.4rem 0.75rem;
+      background: rgba(36, 59, 85, 0.08);
+      border-radius: 999px;
+      font-weight: 600;
+    }
+  </style>
+</header>

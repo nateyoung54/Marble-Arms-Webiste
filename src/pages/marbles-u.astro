@@ -1,0 +1,34 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import SiteHeader from '../components/SiteHeader.astro';
+import SiteFooter from '../components/SiteFooter.astro';
+import PlaceholderImage from '../components/PlaceholderImage.astro';
+---
+<BaseLayout title="Marble Arms | Marbles U" description="Marble Arms training and education">
+  <main>
+    <SiteHeader />
+    <section class="hero">
+      <p class="tag">Marbles U</p>
+      <h2>Training, safety, and maintenance resources.</h2>
+      <p>
+        Replace this copy with educational programs, guides, and training modules.
+      </p>
+      <PlaceholderImage caption="Replace with training or instructional photography." />
+    </section>
+    <section class="grid">
+      <article class="card">
+        <h3>Safety Courses</h3>
+        <p>Outline safety curriculum, certifications, and schedules.</p>
+      </article>
+      <article class="card">
+        <h3>Maintenance Guides</h3>
+        <p>Provide step-by-step cleaning and care instructions.</p>
+      </article>
+      <article class="card">
+        <h3>Video Library</h3>
+        <p>Embed tutorial videos and downloadable PDFs.</p>
+      </article>
+    </section>
+  </main>
+  <SiteFooter />
+</BaseLayout>
